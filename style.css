@@ -1,0 +1,111 @@
+/* isse layout responsive bnta h*/
+.grid {
+    display: grid;
+    height:100%;
+    grid-template-rows: 6rem 5rem auto 5rem;
+    grid-template-columns: 20% auto 20%;
+    font-size: 1.5rem;
+}
+@media (max-width: 480px){
+    .grid{
+        grid-template-rows: 6rem 6rem 6rem auto 6rem 6rem;
+        grid-template-columns: 1fr;}
+    aside, main{
+        grid-column: 1/4;
+    }
+}
+/* header wallpaper */
+.header{
+    height:200px;
+    background-color: black;
+    background-image: url('ss.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-family: Arial,sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}   
+html, body {
+    /* isse neeche k by defoult color white se black ho jayega */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+    
+}
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #111;
+    color: #cf631b;
+    padding: 40px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #d46a2dda;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+  }
+  
+  .card {
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+  }
+  
+  .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .card h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  .card li{
+    list-style: none;
+    line-height: 1.6;
+  }
+  
